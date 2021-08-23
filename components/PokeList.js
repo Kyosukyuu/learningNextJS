@@ -19,7 +19,14 @@ export default function PokeList() {
 
   return (
     <Center>
-      <SimpleGrid columns={[1, 1, 2, 2]} mx={20} my={8} spacing={5} maxW="xl">
+      <SimpleGrid
+        as="section"
+        columns={[1, 1, 2, 2]}
+        mx="auto"
+        my={8}
+        spacing={5}
+        maxW="xl"
+      >
         <AnimatePresence exitBeforeEnter>
           <AnimateSharedLayout>
             {allData[0] &&

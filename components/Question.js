@@ -14,7 +14,7 @@ export default function Question() {
 
   return (
     <Center>
-      <Heading>
+      <Heading textAlign="center">
         Which Pokemon is{" "}
         {correctPokemon &&
           correctPokemon.name.replace(/^([a-z])/i, (char) =>
