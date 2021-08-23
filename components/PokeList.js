@@ -9,6 +9,7 @@ import { AnimatePresence, AnimateSharedLayout } from "framer-motion";
 export default function PokeList() {
   const { randNums } = useContext(PokemonContext);
   const allData = randNums.map((num) => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const { data } = useSWR(
       `https://pokeapi.co/api/v2/pokemon/${num}`,
       fetcher
