@@ -7,7 +7,6 @@ import { PokemonContext } from "../context/PokemonContext";
 import { AnimatePresence, AnimateSharedLayout } from "framer-motion";
 
 export default function PokeList() {
-  // https://pokeapi.co/api/v2/pokemon/898
   const { randNums } = useContext(PokemonContext);
   const allData = randNums.map((num) => {
     const { data } = useSWR(
